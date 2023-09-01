@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AmenitiesTableViewCell" rowHeight="220" id="KGk-i7-Jjw" customClass="AmenitiesTableViewCell" customModule="Birla_Amenities" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPM-FO-6fB">
+                        <rect key="frame" x="24" y="8" width="272" height="202.33333333333334"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rIC-vw-PeL">
+                                <rect key="frame" x="4" y="4" width="264" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="pUI-nY-bkc"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="QzB-vN-6Te">
+                                <rect key="frame" x="12" y="120" width="260" height="74.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Amenity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0BP-6y-S87">
+                                        <rect key="frame" x="0.0" y="-1.6666666666666714" width="260" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5rQ-g1-XZU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open: 12:00 AM - 11:45 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd4-mO-4fg">
+                                        <rect key="frame" x="0.0" y="30.333333333333343" width="260" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Z7Y-um-CVN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 250 / per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGM-CU-l1l">
+                                        <rect key="frame" x="0.0" y="58.333333333333343" width="260" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Rox-rV-Y8a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0BP-6y-S87" firstAttribute="top" secondItem="QzB-vN-6Te" secondAttribute="top" constant="12" id="Fsa-mb-rxN"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51J-8n-1Ig">
+                                <rect key="frame" x="168" y="100" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Bhv-YV-BUZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="pzo-5H-SZY"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="51J-8n-1Ig" firstAttribute="centerY" secondItem="rIC-vw-PeL" secondAttribute="bottom" id="1ma-0O-1U9"/>
+                            <constraint firstAttribute="trailing" secondItem="QzB-vN-6Te" secondAttribute="trailing" id="4f8-Qm-rIj"/>
+                            <constraint firstItem="QzB-vN-6Te" firstAttribute="leading" secondItem="aPM-FO-6fB" secondAttribute="leading" constant="12" id="70y-Ot-5EQ"/>
+                            <constraint firstAttribute="bottom" secondItem="QzB-vN-6Te" secondAttribute="bottom" constant="8" id="9Iv-Yk-cSb"/>
+                            <constraint firstItem="rIC-vw-PeL" firstAttribute="leading" secondItem="aPM-FO-6fB" secondAttribute="leading" constant="4" id="CAg-41-HPJ"/>
+                            <constraint firstItem="rIC-vw-PeL" firstAttribute="top" secondItem="aPM-FO-6fB" secondAttribute="top" constant="4" id="MDK-2u-Qy1"/>
+                            <constraint firstAttribute="trailing" secondItem="rIC-vw-PeL" secondAttribute="trailing" constant="4" id="XSe-zR-rax"/>
+                            <constraint firstItem="QzB-vN-6Te" firstAttribute="top" secondItem="rIC-vw-PeL" secondAttribute="bottom" id="lLZ-DN-XyX"/>
+                            <constraint firstItem="rIC-vw-PeL" firstAttribute="trailing" secondItem="51J-8n-1Ig" secondAttribute="trailing" constant="20" id="q2c-uG-03w"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aPM-FO-6fB" secondAttribute="trailing" constant="24" id="1Pt-IC-zqr"/>
+                    <constraint firstAttribute="bottom" secondItem="aPM-FO-6fB" secondAttribute="bottom" constant="8" id="LU8-bi-Bk7"/>
+                    <constraint firstItem="aPM-FO-6fB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MbW-rt-jEM"/>
+                    <constraint firstItem="aPM-FO-6fB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="WvW-b4-s4C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amenitiesBookingButton" destination="51J-8n-1Ig" id="7IT-nL-b1w"/>
+                <outlet property="amenitiesDetailStackView" destination="QzB-vN-6Te" id="lmT-Cl-akh"/>
+                <outlet property="amenitiesImage" destination="rIC-vw-PeL" id="1Wf-yj-SUw"/>
+                <outlet property="amenitiesTitleLabel" destination="0BP-6y-S87" id="yuU-tG-B7b"/>
+                <outlet property="contentCellView" destination="aPM-FO-6fB" id="bf8-fm-5EF"/>
+                <outlet property="rateLabel" destination="KGM-CU-l1l" id="4YS-Tw-5vZ"/>
+                <outlet property="timingsLabel" destination="bd4-mO-4fg" id="DJU-ni-pSv"/>
+            </connections>
+            <point key="canvasLocation" x="62.595419847328245" y="94.366197183098592"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
